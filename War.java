@@ -32,7 +32,7 @@ public class War
     public void populate()
     {
         int x = 0;
-        while(x<150){
+        while(x<100){
             x+=1;
             int race = Randomizer.nextInt(10);
             if(race<=5){
@@ -84,7 +84,7 @@ public class War
                 goodArmy.remove(goodIndex);
                 goodDeaths++;
             }
-            else if(badArmy.get(badIndex).isKnockedOut()==true)
+            if(badArmy.get(badIndex).isKnockedOut()==true)
             {
                 badArmy.remove(badIndex);
                 badDeaths++;
